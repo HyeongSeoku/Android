@@ -1,1 +1,1 @@
-# Android
+# Android project sample
