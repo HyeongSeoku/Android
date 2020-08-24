@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">전화</string>
+
+    <string name="name01">장발장</string>
+    <string name="address01">서울</string>
+    <string name="tel01">010-1234-0001</string>
+
+    <string name="name02">코제트</string>
+    <string name="address02">인천</string>
+    <string name="tel02">010-1234-0002</string>
+</resources>
