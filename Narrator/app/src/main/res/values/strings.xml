@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">나레이터</string>
+
+    <string name ="title1">별 헤는 밤</string>
+    <string name = "poet1">윤동주</string>
+    <string name ="body1">
+        \n\n
+        별 헤는 밤\n
+                        윤동주\n
+\n
+계절이 지나가는 하늘에는\n
+가을로 가득 차 있습니다.\n\n
+
+나는 아무 걱정도 없이\n
+가을 속의 별들을 다 헬 듯합니다.\n\n
+
+</string>
+
+    <string name="title2">내가 너를 사랑하고 있는지는</string>
+    <string name="poet2">괴테</string>
+    <string name="body2">
+        \n
+        내가 너를 사랑하고 있는지는\n\n
+                               괴테
+내가 너를 사랑하고 있는지는 나도 모른다. \n
+단 한번 네 얼굴을 보기만 하면\n
+단 한번 네 눈을 보기만 하면\n
+내 마음의 괴로움의 흔적이 사라진다. \n
+얼마나 즐거운 기분인가는\n
+하나님만이 알고 있을 뿐.\n\n
+
+    </string>
+
+</resources>
