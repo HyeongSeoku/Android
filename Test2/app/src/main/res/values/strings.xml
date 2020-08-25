@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">갤러리</string>
+    <string name ="app_name2">명화</string>
+
+    <string name ="title1">Bedroom in Arles</string>
+    <string name = "artist1">Vincent Van Gogh</string>
+    <string name = "picture1">bedroom_in_arles</string>
+
+    <string name="title2">Mona Lisa</string>
+    <string name="artist2">Leonardo da vinci</string>
+    <string name="picture2">mona_lisa</string>
+</resources>
