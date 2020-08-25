@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">비디오 앨범</string>
+    <string name="app_name2">비디오 재생</string>
+
+    <string name="title1">구름 걸친 산</string>
+    <string name="place1">산</string>
+    <string name="video1">mountain</string>
+
+    <string name="title2">파도치는 절벽</string>
+    <string name="place2">절벽</string>
+    <string name="video2">nature</string>
+
+
+    <string name="title3">별이 수놓인 밤하늘</string>
+    <string name="place3">하늘</string>
+    <string name="video3">nightsky</string>
+
+
+</resources>
