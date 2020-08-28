@@ -38,6 +38,6 @@
         app:layout_constraintStart_toEndOf="@id/button"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="244dp" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
