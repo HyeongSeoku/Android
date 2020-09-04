@@ -21,6 +21,7 @@ public class Mission03 extends AppCompatActivity {
         imageView02 = (ImageView) findViewById(R.id.imageView02);
 
         imageView01.setImageResource(R.drawable.beach);
+
         Button button01 =(Button) findViewById(R.id.button);
         button01.setOnClickListener(new View.OnClickListener() {
             @Override
