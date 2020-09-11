@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/title08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인하기"
+            android:textColor="#ff222222"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/loginButton08"
+            >
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/usernameLabel08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  아이디   : "
+                    android:textSize="16sp"
+                    android:textColor="#ff222222"
+                    />
+                <EditText
+                    android:id="@+id/usernameInput08"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_Baseline="@+id/usernameLabel08"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/passwordLabel08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 : "
+                    android:textSize="16sp"
+                    android:textColor="#ff222222"
+                    />
+                <EditText
+                    android:id="@+id/passwordInput08"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usernameInput08"
+                    android:layout_Baseline="@+id/passwordLabel08"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginButton08"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="로그인"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
