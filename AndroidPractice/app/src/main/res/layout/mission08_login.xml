@@ -52,7 +52,6 @@
                     android:id="@+id/usernameInput08"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:layout_Baseline="@+id/usernameLabel08"
                     />
             </LinearLayout>
             <LinearLayout
@@ -74,7 +73,6 @@
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/usernameInput08"
-                    android:layout_Baseline="@+id/passwordLabel08"
                     />
             </LinearLayout>
         </LinearLayout>
