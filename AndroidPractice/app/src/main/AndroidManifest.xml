@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Mission08_mainMenu"/>
+        <activity android:name=".Mission08_customerMenu"/>
+        <activity android:name=".Mission08_salesMenu"/>
+        <activity android:name=".Mission08_productMenu"/>
     </application>
 
 </manifest>
