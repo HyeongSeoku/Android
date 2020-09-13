@@ -41,7 +41,7 @@ public class Mission08_mainMenu extends AppCompatActivity {
         menu01Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Mission08_customerMenu.class)
+                Intent intent = new Intent(getApplicationContext(),Mission08_customerMenu.class);
                         intent.putExtra("titleMsg","고객 관리 화면");
 
                 startActivityForResult(intent,REQUEST_CODE_CUSTOMER);
