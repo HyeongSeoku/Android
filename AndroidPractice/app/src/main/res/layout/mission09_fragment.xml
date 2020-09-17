@@ -60,7 +60,6 @@
                     android:id="@+id/usernameInput09"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_toRightof="@+id/usernameLabel09"
                     android:inputType="textPersonName"
                     />
             </LinearLayout>
@@ -85,7 +84,6 @@
                     android:id="@+id/userAgeInput09"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_toRightof="@+id/userAgeLabel09"
                     android:inputType="numberDecimal"
                     />
 
@@ -127,6 +125,7 @@
         </LinearLayout>
     </RelativeLayout>
     <Button
+        android:id="@+id/saveButton09"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -134,5 +133,6 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#ff222222"
+        android:layout_below="@+id/inputlayout09"
         />
 </RelativeLayout>
