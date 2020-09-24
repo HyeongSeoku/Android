@@ -6,7 +6,9 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,22 @@ public class Project3_2_1 extends AppCompatActivity implements SensorEventListen
         iv_pineWheel = (ImageView)findViewById(R.id.iv_pinwheel);
         sm = (SensorManager)getSystemService(SENSOR_SERVICE);
         sensor_linear = sm.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
+
+        Button stopButton = (Button)findViewById(R.id.stopButton3_2_1);
+        stopButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sm.unregisterListener(Project3_2_1.this,sensor_linear);
+            }
+        });
+        Button startButton = (Button)findViewById(R.id.startButton3_2_1);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sm.registerListener(Project3_2_1.this,sensor_linear,SensorManager.SENSOR_STATUS_ACCURACY_HIGH);
+            }
+        });
+
     }
 
     @Override
