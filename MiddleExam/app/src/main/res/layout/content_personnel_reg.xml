@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="100dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <!-- 성명 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="성명" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 성별 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="성별" />
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남" />
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- 취미 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="취미" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:id="@+id/hobby1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="독서" />
+            <CheckBox
+                android:id="@+id/hobby2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연주" />
+            <CheckBox
+                android:id="@+id/hobby3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="운동" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 취미 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="사진" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/tv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:text="등록할 사진을 보려면 클릭하세요!"
+                android:clickable="true"
+                android:onClick="selectPhoto" />
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- '등록' 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:onClick="register" />
+    </LinearLayout>
+</LinearLayout>
