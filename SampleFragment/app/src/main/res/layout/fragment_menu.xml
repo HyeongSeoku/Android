@@ -5,19 +5,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainFragment"
-    android:id="@+id/mainFragment"
+    android:id="@+id/menuFragment"
+    android:background="@color/colorPrimary"
     >
 
    <TextView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="메인 프래그먼트"
+       android:text="메뉴 프래그먼트"
        android:textSize="30sp"/>
     <Button
-        android:id="@+id/menuButton"
+        android:id="@+id/mainButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="메뉴로"
+        android:text="메인 메뉴로"
         />
 
 </LinearLayout>
