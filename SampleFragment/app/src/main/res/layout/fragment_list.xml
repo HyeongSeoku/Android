@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/fragmentButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="첫번째 버튼"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/fragmentButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="두번째 버튼"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/fragmentButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="세번째 버튼"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
