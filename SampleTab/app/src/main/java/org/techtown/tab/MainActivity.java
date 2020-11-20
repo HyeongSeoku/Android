@@ -1,31 +1,30 @@
 package org.techtown.tab;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar; // 버전 바뀜.
 import androidx.fragment.app.Fragment;
 
+
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+import android.widget.Toast;
 
-import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity {
-    Toolbar toolbar;
+
     Fragment1 fragment1;
     Fragment2 fragment2;
     Fragment3 fragment3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);       //에러 import androidx.appcompat.widget.Toolbar; 로 해결
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(false);
 
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
@@ -33,36 +32,31 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit();
 
-        TabLayout tabs = findViewById(R.id.tabs);
-        tabs.addTab(tabs.newTab().setText("통화기록"));
-        tabs.addTab(tabs.newTab().setText("스팸기록"));
-        tabs.addTab(tabs.newTab().setText("연락처"));
-        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                int position = tab.getPosition();
-                Log.d("MainActivity","선택된 탭 : "+position);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        switch (menuItem.getItemId()){
+                            case R.id.tab1:
+                                Toast.makeText(getApplicationContext(),"첫번째 탭 선택됨.",Toast.LENGTH_LONG).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit();
 
-                Fragment selected = null;
-                if(position == 0){
-                    selected = fragment1;
-                }else if(position == 1){
-                    selected = fragment2;
-                }else if (position == 2){
-                    selected = fragment3;
+                                return true;
+                            case R.id.tab2:
+                                Toast.makeText(getApplicationContext(),"두번째 탭 선택됨.",Toast.LENGTH_LONG).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
+
+                                return true;
+                            case R.id.tab3:
+                                Toast.makeText(getApplicationContext(),"세번째 탭 선택됨.",Toast.LENGTH_LONG).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment3).commit();
+
+                                return true;
+                        }
+                        return false;
+                    }
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.container,selected).commit();
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
+        );
     }
 }
