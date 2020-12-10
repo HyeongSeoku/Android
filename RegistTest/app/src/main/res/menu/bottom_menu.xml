@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/userList"
+        android:icon="@drawable/user"
+        android:enabled="true"
+        android:title="userLIst"/>
+    <item
+        android:id="@+id/chatting"
+        android:icon="@drawable/chat"
+        android:enabled="true"
+        android:checked="true"
+        android:title="chatting"/>
+    <item
+        android:id="@+id/hashtag"
+        android:icon="@drawable/hashtag"
+        android:enabled="true"
+        android:title="hashtag"/>
+    <item
+        android:id="@+id/dotdot"
+        android:icon="@drawable/dotdotdot"
+        android:enabled="true"
+        android:title="others"/>
+
+</menu>
