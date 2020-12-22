@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNV;
     Toolbar myToolbar;
     private String UserName;
+
     @Override
     protected void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         //LoginActivity에서 넘어온 User값 잠시 저장
         Intent getintent = getIntent();
         UserName = getintent.getStringExtra("UserName");
+
 
         //툴바 지정
         myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
@@ -59,15 +62,15 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_search:
-                // User chose the "Settings" item, show the app settings UI...
+                // User chose the "Search" item, show the app search UI...
                 Toast.makeText(getApplicationContext(), "검색 버튼 클릭됨", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.action_friend_add:
-                // User chose the "Settings" item, show the app settings UI...
+                // User chose the "friend_add" item, show the app friend_add UI...
                 Toast.makeText(getApplicationContext(), "친구추가 버튼 클릭됨", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.action_music:
-                // User chose the "Settings" item, show the app settings UI...
+                // User chose the "music" item, show the app music UI...
                 Toast.makeText(getApplicationContext(), "음악 버튼 클릭됨", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.action_settings:
